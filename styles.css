@@ -1,0 +1,149 @@
+*{
+  background: fixed;}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    }
+  .home{
+  text-align: left;
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e91e63;
+    padding: 10px 20px;
+    color: white;
+  }
+  .searchbar{
+    padding: 1%;
+    text-align: center;}
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .cart-icon {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .featured {
+    padding: 30px;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .featured h2 {
+    margin-bottom: 20px;
+    color: #e91e63;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+
+  }
+  
+  .product-card {
+    background: pink ;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .product-card img {
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+  }
+  
+  .product-card p {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-card button {
+    padding: 8px 12px;
+    background: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-panel {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: right 0.4s ease-in-out;
+    z-index: 999;
+  }
+  
+  .cart-panel.open {
+    right: 0;
+  }
+  
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .cart-header h3 {
+    font-size: 20px;
+    color: #e91e63;
+  }
+  
+  .close-cart {
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #cart-items {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  #cart-items li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  footer {
+    background: #e91e63;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+  }
+  
